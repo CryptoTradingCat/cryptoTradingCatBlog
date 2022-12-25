@@ -1,0 +1,106 @@
+body {
+    background-color: #00008B;
+    color: #C71585;
+    font-size: 100%;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+:root {
+    --success: #00b894;
+    --progress: #C71585;
+  }
+  
+  .progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  .progressbar {
+    background-color: var(--progress);
+    color: #00008B;
+    padding: 1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  
+  .progressbar[title="loading"] {
+     background-color: var(--progress);
+  }
+  
+  .progressbar[title="loaded"] {
+     background-color: var(--success);
+  }
+  .step {
+    width: 5%;
+  }
+  
+  .container {
+    grid-template-columns:1fr;
+    margin:1rem;
+    /* // Small devices (landscape phones, 576px and up) 
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... } */
+
+    /* // X-Large devices (large desktops, 1200px and up) */
+
+    /* @media (min-width: 1200px) { ... } */
+
+    /* // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) { ... } */
+ }
+
+.page-title,
+.page-sub-title,
+.progressbar,
+.follow,
+.steps-dev-blog,
+.twitter-link,
+.git-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-title,
+.page-sub-title,
+.steps-dev-blog,
+.twitter-link,
+.git-link {
+    margin: 1rem;
+    padding: 1rem;
+}
+.follow,
+.twitter-link,
+.steps-dev-blog,
+.git-link  {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+}
