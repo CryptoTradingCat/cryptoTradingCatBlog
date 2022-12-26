@@ -104,3 +104,17 @@ p {
   align-items: center;
   flex-flow: row;
 }
+
+.cryptos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
